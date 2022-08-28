@@ -13,7 +13,7 @@ https://dl.sipeed.com/TANG/Primer/IDE
 
 です。
 
-<img src="./td_install0.jpg" width="900">
+<img src="./td_install0.png" width="900">
 
 
 ### Linux
