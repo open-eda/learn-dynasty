@@ -55,3 +55,9 @@ https://www.microsoft.com/ja-jp/download/details.aspx?id=26999
 <img src="./msvcr1.png">
 
 <img src="./msvcr2.png">
+
+
+#### ライセンスファイルのインストール
+
+
+#### ドライバのイストール
