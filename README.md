@@ -46,6 +46,7 @@ https://dl.sipeed.com/TANG/Primer/IDE
 #### Microsoft Visual C++ 2010のインストール
 
 Tang Dynastyを実行して下記の画面が出た場合は、「Microsoft Visual C++ 2010 Service Pack 1 再頒布可能パッケージ 」をインストールしてください
+
 <img src="./td_install5.png">
 
 https://www.microsoft.com/ja-jp/download/details.aspx?id=26999
