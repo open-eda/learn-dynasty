@@ -1,0 +1,8 @@
+set_pin_assignment {clock} { LOCATION = K14; }
+
+set_pin_assignment {push_button0_n} { LOCATION = T2; }
+set_pin_assignment {push_button1_n} { LOCATION = K16; }
+
+set_pin_assignment {led_red_n}   { LOCATION = R3; }
+set_pin_assignment {led_green_n} { LOCATION = J14; }
+set_pin_assignment {led_blue_n}  { LOCATION = P13; }
