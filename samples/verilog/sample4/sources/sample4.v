@@ -16,40 +16,18 @@ module sample4
     wire led_red;
     wire led_green;
     wire led_blue;
-
-    reg[1:0] state, next_state;
-    parameter IDLE  = 0;
-    parameter RED   = 1;
-
-    initial
-    begin
-        state = IDLE;
-    end
-
-    always @(posedge clock)
-    begin
-        state <= next_state;
-    end
-    
-    always @(*)
-    begin
-        case (state)
-            IDLE:
-                if (push_button0 == 1)
-                    next_state = RED;
-                else
-                    next_state = IDLE;
-            RED:
-                if (push_button1 == 1)
-                    next_state = IDLE;
-                else
-                    next_state = RED;
-        endcase
-    end
-
-    assign led_red   = (state == RED) ? 1 : 0;
-    assign led_green = 0;
-    assign led_blue  = 0;
+       
+    sample4_main u_sample4_main
+    (
+        .clock        (clock),
+        
+        .push_button0 (push_button0),
+        .push_button1 (push_button1),
+        
+        .led_red      (led_red),
+        .led_green    (led_green),
+        .led_blue     (led_blue)
+    );
 
 
     sample_wrapper u_sample_wrappter 
