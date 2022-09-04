@@ -13,6 +13,7 @@
             <File>../sources/push_button_debouncer.v</File>
             <File>../sources/sample1.v</File>
             <File>../sources/sample_wrapper.v</File>
+            <File>../sources/sample1_main.v</File>
         </Verilog>
         <ADC_FILE>../constraints/sample.adc</ADC_FILE>
         <SDC_FILE>../constraints/sample.sdc</SDC_FILE>
@@ -29,8 +30,8 @@
         </EG4X>
     </Device_Settings>
     <Project_Settings>
-        <Step_Last_Change>2022-09-01 14:40:04</Step_Last_Change>
-        <Current_Step>0</Current_Step>
+        <Step_Last_Change>2022-09-04 19:57:27</Step_Last_Change>
+        <Current_Step>60</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>
 </Project>

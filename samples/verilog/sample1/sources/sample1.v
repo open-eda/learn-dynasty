@@ -17,9 +17,16 @@ module sample1
     wire led_green;
     wire led_blue;
     
-    assign led_red   = push_button0 & push_button1;
-    assign led_green = 0;
-    assign led_blue  = 0;
+    sample1_main u_sample1_main
+    (
+        .push_button0 (push_button0),
+        .push_button1 (push_button1),
+        
+        .led_red      (led_red),
+        .led_green    (led_green),
+        .led_blue     (led_blue)
+    );
+
 
     sample_wrapper u_sample_wrappter 
     (
