@@ -10,9 +10,6 @@
     </HardWare>
     <Source_Files>
         <Verilog>
-            <File>sample1.v</File>
-            <File>sample_wrapper.v</File>
-            <File>push_button_debouncer.v</File>
             <File>../sources/push_button_debouncer.v</File>
             <File>../sources/sample1.v</File>
             <File>../sources/sample_wrapper.v</File>
@@ -32,8 +29,8 @@
         </EG4X>
     </Device_Settings>
     <Project_Settings>
-        <Step_Last_Change>2022-09-01 10:57:27</Step_Last_Change>
-        <Current_Step>60</Current_Step>
+        <Step_Last_Change>2022-09-01 14:40:04</Step_Last_Change>
+        <Current_Step>0</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>
 </Project>
