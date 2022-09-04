@@ -13,40 +13,19 @@ module sample2
     wire push_button0;
     wire push_button1;
 
-    reg  led_red;
-    reg  led_green;
-    reg  led_blue;
-    
-    always @(*)
-    begin
-        case({push_button1, push_button0})
-            2'b00:
-                begin
-                    led_red   = 0;
-                    led_green = 0;
-                    led_blue  = 0;
-                end
-            2'b01:
-                begin
-                    led_red   = 1;
-                    led_green = 0;
-                    led_blue  = 0;
-                end
-            2'b10:
-                begin
-                    led_red   = 0;
-                    led_green = 1;
-                    led_blue  = 0;
-                end
-            2'b11:
-                begin
-                    led_red   = 0;
-                    led_green = 0;
-                    led_blue  = 1;
-                end
-        endcase
-    end
+    wire led_red;
+    wire led_green;
+    wire led_blue;
 
+    sample2_main u_sample2_main
+    (
+        .push_button0 (push_button0),
+        .push_button1 (push_button1),
+        
+        .led_red      (led_red),
+        .led_green    (led_green),
+        .led_blue     (led_blue)
+    );   
 
     sample_wrapper u_sample_wrappter 
     (
