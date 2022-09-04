@@ -37,8 +37,6 @@ module sample4_main
                     next_state = IDLE;
                 else
                     next_state = RED;
-            default:
-                    next_state = IDLE;
         endcase
     end
 
